@@ -1,0 +1,5 @@
+create table s(s int,sname char,primary key (s));
+
+insert into s valuse(1,'a');
+
+insert into s valuse(2,'b');
