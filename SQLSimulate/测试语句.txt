@@ -1,0 +1,38 @@
+create table s(s int,sname char,primary key (s));
+create table c(c int,cname char,primary key (c));
+create table sc(s int,c int,sc int,primary key (s,c));
+
+
+insert into s valuse(1,'a');
+insert into s valuse(2,'b');
+insert into s valuse(3,'c');
+insert into s valuse(4,'d');
+insert into s valuse(5,'e');
+
+insert into c valuse(1,'a');
+insert into c valuse(2,'b');
+insert into c valuse(3,'c');
+insert into c valuse(4,'d');
+insert into c valuse(5,'e');
+
+insert into sc valuse(1,1,100);
+insert into sc valuse(1,2,80);
+insert into sc valuse(1,3,60);
+insert into sc valuse(2,2,78);
+insert into sc valuse(3,2,20);
+insert into sc valuse(4,5,100);
+insert into sc valuse(5,3,95);
+insert into sc valuse(4,1,69);
+
+
+
+select * from s;
+
+select s.sname from s where s.s#=1;
+select s.sname from s,sc,c where sc.s=s.s and sc.c=c.c and  c.cname='a';
+select s.sname from s,sc,c where sc.s=s.s and sc.c=c.c ;
+
+create table s(s int,sname char,primary key (s));
+
+alter table s add qq char;
+alter table s drop qq;

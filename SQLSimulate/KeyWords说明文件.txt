@@ -1,0 +1,15 @@
+非keyword   -1
+select      0
+insert      1
+create      2
+delete      3
+update      4
+from        5
+where       6
+
+关键字标识符  1
+
+
+char  1
+int   2
+else  0
